@@ -1,3 +1,71 @@
-body {
-    background-color: #b73737;
+* {box-sizing: border-box;}
+
+body {margin: 0px; background-color: #070707;}
+
+@media screen and (max-width: 430px) {
+
+/*
+SECCION 1 (ESCUCHADO RECIENTEMENTE)
+*/
+
+    .fa-gear {color:#fff;}
+
+    .recientes__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .recientes__nav__h1 ,
+    .creados__h1 {
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+
+    .recientes__contenedor__album{
+        display: flex;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        overflow-x: scroll;
+        gap: 4vw;
+    }
+
+    .reciente__album--img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .album__h2 {
+        margin-top: 5px;
+        padding-left: 2px;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+/*
+SECCION 2 (CREADOS PARA TI)
+*/
+
+    .creados__h1 {padding-left: 4vw ;}
+
+    .creados__contenedor {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .creados__contenedor--album {
+
+    }
+
+    .album__h2--dimm {
+        color: #ababab;
+    }
+
+    .creados__album--img{
+        width: 40vw;
+        height: 40vw;
+    }
 }
