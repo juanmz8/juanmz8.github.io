@@ -21,8 +21,8 @@ SECCION 1 (ESCUCHADO RECIENTEMENTE)
 
     .recientes__nav__h1 ,
     .creados__h1 {
-        font-size: 1.5rem;
         color: #ffffff;
+        font-size: 1.5rem;
     }
 
     .recientes__contenedor__album{
@@ -43,6 +43,7 @@ SECCION 1 (ESCUCHADO RECIENTEMENTE)
         padding-left: 2px;
         color: #fff;
         font-size: 1rem;
+        font-weight: 500;
     }
 
 /*
@@ -52,20 +53,49 @@ SECCION 2 (CREADOS PARA TI)
     .creados__h1 {padding-left: 4vw ;}
 
     .creados__contenedor {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
     }
 
-    .creados__contenedor--album {
+    .creados__album {margin-bottom: 3vw;}
 
+    .creados__img--contenedor {position: relative;}
+
+    .creados__img,
+    .svg__top,
+    .svg__bottom {
+        width: 45vw;
+        height: 45vw;
+    }
+
+    .svg__bottom,
+    .svg__top{
+        position: absolute;
+        opacity: 90%;
+        left: 0px;
+        top: 0px;
+    }
+
+    .creados__p{
+        position: absolute;
+        bottom: 1vw;
+        left: 2vw;
+        font-weight: 600;
     }
 
     .album__h2--dimm {
-        color: #ababab;
-    }
-
-    .creados__album--img{
-        width: 40vw;
-        height: 40vw;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        max-width: 44vw;
+        color: #848484;
+        font-size: 1rem;
+        font-weight: 500;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }
