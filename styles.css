@@ -111,13 +111,10 @@ SECCION 2 (CREADOS PARA TI)
     /*NAV Menu*/
 
     .nav{
-        background-color: #111111;
+        background-color: #111;
         display: flex;
-        justify-content: space-around;
         width: 100vw;
         height: 10vh;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
         position: fixed;
         bottom: 0px;
     }
@@ -127,20 +124,21 @@ SECCION 2 (CREADOS PARA TI)
         padding: 0px;
         border-style: none;
         background: none;
+        width: 25vw;
+        height: 10vh;
         color: #747474;
     }
 
+    .nav__button:active {background-color: #535353;}
+    .nav__button:focus {color: #fff;}
+
     .nav__icon {
         font-size: 2rem;
+        margin-bottom: 1.5vh;
     }
 
     .nav__text {
         font-size: 0.7rem;
-        margin: 1vh;
+        margin: 0px;
     }
-
-    .nav__button:focus {
-        color: #fff;
-    }
-
 }
