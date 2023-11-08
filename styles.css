@@ -10,7 +10,7 @@ SECCION 1 (ESCUCHADO RECIENTEMENTE)
 
     .fa-gear {color:#fff;}
 
-    .recientes__nav {
+    .title {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -19,13 +19,13 @@ SECCION 1 (ESCUCHADO RECIENTEMENTE)
         margin-bottom: 2vw;
     }
 
-    .recientes__nav__h1 ,
-    .creados__h1 {
+    .title__h1_a ,
+    .title__h1_b {
         color: #ffffff;
         font-size: 1.5rem;
     }
 
-    .recientes__contenedor__album{
+    .slider{
         display: flex;
         padding-left: 4vw;
         padding-right: 4vw;
@@ -33,12 +33,12 @@ SECCION 1 (ESCUCHADO RECIENTEMENTE)
         gap: 4vw;
     }
 
-    .reciente__album--img {
+    .slider__img {
         width: 30vw;
         height: 30vw;
     }
 
-    .album__h2 {
+    .slider__h2 {
         margin-top: 5px;
         padding-left: 2px;
         color: #fff;
@@ -50,42 +50,40 @@ SECCION 1 (ESCUCHADO RECIENTEMENTE)
 SECCION 2 (CREADOS PARA TI)
 */
 
-    .creados__h1 {padding-left: 4vw ;}
+    .title__h1_b {padding-left: 4vw ;}
 
-    .creados__contenedor {
+    .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-items: center;
     }
 
-    .creados__album {margin-bottom: 3vw;}
+    .grid__album {margin-bottom: 3vw;}
 
-    .creados__img--contenedor {position: relative;}
+    .album__box {position: relative;}
 
-    .creados__img,
-    .svg__top,
-    .svg__bottom {
-        width: 45vw;
-        height: 45vw;
+    .box__img,
+    .box__svg {
+        width: 43vw;
+        height: 43vw;
     }
 
-    .svg__bottom,
-    .svg__top{
+    .box__svg{
         position: absolute;
         opacity: 90%;
         left: 0px;
         top: 0px;
     }
 
-    .creados__p{
+    .box__title{
         position: absolute;
         bottom: 1vw;
         left: 2vw;
         font-weight: 600;
     }
 
-    .album__h2--dimm {
+    .album__info {
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 1vw;
@@ -98,4 +96,51 @@ SECCION 2 (CREADOS PARA TI)
         white-space: nowrap;
         overflow: hidden;
     }
+
+    /*SECCION 3 RECOMENDACIONES PARA TI*/
+
+    .slider__img__b {
+        width: 43vw;
+        height: 43vw;
+    }
+
+    .last__slider{
+        margin-bottom: 10vh;
+    }
+
+    /*NAV Menu*/
+
+    .nav{
+        background-color: #111111;
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        height: 10vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .nav__button{
+        margin: 0px;
+        padding: 0px;
+        border-style: none;
+        background: none;
+        color: #747474;
+    }
+
+    .nav__icon {
+        font-size: 2rem;
+    }
+
+    .nav__text {
+        font-size: 0.7rem;
+        margin: 1vh;
+    }
+
+    .nav__button:focus {
+        color: #fff;
+    }
+
 }
